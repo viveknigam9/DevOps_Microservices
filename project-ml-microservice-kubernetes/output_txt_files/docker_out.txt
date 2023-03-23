@@ -1,14 +1,14 @@
 (.devops) voclabs:~/environment/DevOps_Microservices/project-ml-microservice-kubernetes (master) $ ./run_docker.sh 
-Sending build context to Docker daemon  81.86MB
+Sending build context to Docker daemon  86.99MB
 Step 1/6 : FROM python:3.7.3-stretch
  ---> 34a518642c76
 Step 2/6 : WORKDIR /app
  ---> Using cache
  ---> ada3f13953e0
 Step 3/6 : COPY . app.py /app/
- ---> 091f801d6ebe
+ ---> 690dd7d6209b
 Step 4/6 : RUN pip install --upgrade pip &&     pip install --trusted-host pypi.python.org -r requirements.txt
- ---> Running in d1e83a3f48f1
+ ---> Running in 49a5851586bc
 Collecting pip
   Downloading https://files.pythonhosted.org/packages/07/51/2c0959c5adf988c44d9e1e0d940f5b074516ecc87e96b1af25f59de9ba38/pip-23.0.1-py3-none-any.whl (2.1MB)
 Installing collected packages: pip
@@ -18,88 +18,93 @@ Installing collected packages: pip
 Successfully installed pip-23.0.1
 Collecting Click==7.0
   Downloading Click-7.0-py2.py3-none-any.whl (81 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.3/81.3 kB 16.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.3/81.3 kB 13.9 MB/s eta 0:00:00
 Collecting Flask==1.0.2
   Downloading Flask-1.0.2-py2.py3-none-any.whl (91 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.4/91.4 kB 18.2 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.4/91.4 kB 20.1 MB/s eta 0:00:00
 Collecting itsdangerous==1.1.0
   Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
 Collecting Jinja2==2.10.3
   Downloading Jinja2-2.10.3-py2.py3-none-any.whl (125 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 25.0 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 22.3 MB/s eta 0:00:00
 Collecting MarkupSafe==1.1.1
   Downloading MarkupSafe-1.1.1-cp37-cp37m-manylinux2010_x86_64.whl (33 kB)
 Collecting numpy==1.17.2
   Downloading numpy-1.17.2-cp37-cp37m-manylinux1_x86_64.whl (20.3 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.3/20.3 MB 49.0 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.3/20.3 MB 59.9 MB/s eta 0:00:00
 Collecting pandas==0.24.2
   Downloading pandas-0.24.2-cp37-cp37m-manylinux1_x86_64.whl (10.1 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 72.1 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.1/10.1 MB 78.6 MB/s eta 0:00:00
 Collecting python-dateutil==2.8.0
   Downloading python_dateutil-2.8.0-py2.py3-none-any.whl (226 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.8/226.8 kB 33.9 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.8/226.8 kB 29.6 MB/s eta 0:00:00
 Collecting pytz==2019.3
   Downloading pytz-2019.3-py2.py3-none-any.whl (509 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 48.9 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 509.2/509.2 kB 45.1 MB/s eta 0:00:00
 Collecting scikit-learn==0.20.3
   Downloading scikit_learn-0.20.3-cp37-cp37m-manylinux1_x86_64.whl (5.4 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 75.4 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 94.6 MB/s eta 0:00:00
 Collecting scipy==1.3.1
   Downloading scipy-1.3.1-cp37-cp37m-manylinux1_x86_64.whl (25.2 MB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.2/25.2 MB 40.5 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.2/25.2 MB 48.0 MB/s eta 0:00:00
 Collecting six==1.12.0
   Downloading six-1.12.0-py2.py3-none-any.whl (10 kB)
 Collecting Werkzeug==0.16.0
   Downloading Werkzeug-0.16.0-py2.py3-none-any.whl (327 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 327.3/327.3 kB 45.9 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 327.3/327.3 kB 44.8 MB/s eta 0:00:00
 Collecting pylint==2.4.4
   Downloading pylint-2.4.4-py3-none-any.whl (302 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 303.0/303.0 kB 38.8 MB/s eta 0:00:00
-Collecting mccabe<0.7,>=0.6
-  Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 303.0/303.0 kB 28.5 MB/s eta 0:00:00
 Collecting isort<5,>=4.2.5
   Downloading isort-4.3.21-py2.py3-none-any.whl (42 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 kB 7.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 kB 8.8 MB/s eta 0:00:00
+Collecting mccabe<0.7,>=0.6
+  Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
 Collecting astroid<2.4,>=2.3.0
   Downloading astroid-2.3.3-py3-none-any.whl (205 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.7/205.7 kB 33.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 205.7/205.7 kB 35.7 MB/s eta 0:00:00
 Collecting wrapt==1.11.*
   Downloading wrapt-1.11.2.tar.gz (27 kB)
   Preparing metadata (setup.py): started
   Preparing metadata (setup.py): finished with status 'done'
 Collecting lazy-object-proxy==1.4.*
   Downloading lazy_object_proxy-1.4.3-cp37-cp37m-manylinux1_x86_64.whl (56 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 kB 11.3 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 56.5/56.5 kB 11.8 MB/s eta 0:00:00
 Collecting typed-ast<1.5,>=1.4.0
   Downloading typed_ast-1.4.3-cp37-cp37m-manylinux1_x86_64.whl (743 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 743.4/743.4 kB 55.9 MB/s eta 0:00:00
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 743.4/743.4 kB 63.6 MB/s eta 0:00:00
 Building wheels for collected packages: wrapt
   Building wheel for wrapt (setup.py): started
   Building wheel for wrapt (setup.py): finished with status 'done'
-  Created wheel for wrapt: filename=wrapt-1.11.2-cp37-cp37m-linux_x86_64.whl size=71338 sha256=c97a553ceccc6431ca6585075367bee33f161d6670de2c0680bf7304dd6132c3
+  Created wheel for wrapt: filename=wrapt-1.11.2-cp37-cp37m-linux_x86_64.whl size=71337 sha256=f193a9736b24a310c4ea088d6ef27b77d6d2445529af13b3f6038d686005c1c4
   Stored in directory: /root/.cache/pip/wheels/23/5f/62/304b411f20be41821465a82bc98baabc5e68c3cdd1eb99db71
 Successfully built wrapt
 Installing collected packages: wrapt, typed-ast, pytz, mccabe, Werkzeug, six, numpy, MarkupSafe, lazy-object-proxy, itsdangerous, isort, Click, scipy, python-dateutil, Jinja2, astroid, scikit-learn, pylint, pandas, Flask
 Successfully installed Click-7.0 Flask-1.0.2 Jinja2-2.10.3 MarkupSafe-1.1.1 Werkzeug-0.16.0 astroid-2.3.3 isort-4.3.21 itsdangerous-1.1.0 lazy-object-proxy-1.4.3 mccabe-0.6.1 numpy-1.17.2 pandas-0.24.2 pylint-2.4.4 python-dateutil-2.8.0 pytz-2019.3 scikit-learn-0.20.3 scipy-1.3.1 six-1.12.0 typed-ast-1.4.3 wrapt-1.11.2
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
-Removing intermediate container d1e83a3f48f1
- ---> f7e3dd120a29
+Removing intermediate container 49a5851586bc
+ ---> eb162b4da589
 Step 5/6 : EXPOSE 80
- ---> Running in c0c7601af3e7
-Removing intermediate container c0c7601af3e7
- ---> 5ae548bbed55
+ ---> Running in 76be156523bd
+Removing intermediate container 76be156523bd
+ ---> bb4ba178f388
 Step 6/6 : CMD ["python", "app.py"]
- ---> Running in 7384ecd3b1e4
-Removing intermediate container 7384ecd3b1e4
- ---> 0a230f23e58b
-Successfully built 0a230f23e58b
+ ---> Running in 15a09a973eb5
+Removing intermediate container 15a09a973eb5
+ ---> 3bcfae86f661
+Successfully built 3bcfae86f661
 Successfully tagged udacityproj:latest
-REPOSITORY                    TAG             IMAGE ID       CREATED                  SIZE
-udacityproj                   latest          0a230f23e58b   Less than a second ago   1.34GB
-<none>                        <none>          fdd21e0e5f14   About an hour ago        1.26GB
-<none>                        <none>          ba5c6f714be8   About an hour ago        1.26GB
-gcr.io/k8s-minikube/kicbase   <none>          01c0ce65fff7   7 weeks ago              1.15GB
-python                        3.7.3-stretch   34a518642c76   3 years ago              929MB
+REPOSITORY                      TAG             IMAGE ID       CREATED                  SIZE
+udacityproj                     latest          3bcfae86f661   Less than a second ago   1.34GB
+viveknig9/udacityproj           latest          89166fdd59d1   10 minutes ago           1.34GB
+<none>                          <none>          b78e444f424a   About an hour ago        1.34GB
+viveknig9/repo001/udacityproj   latest          38454037d67b   17 hours ago             1.34GB
+viveknig9/udacityproj           <none>          38454037d67b   17 hours ago             1.34GB
+viveknig9/repo001               latest          0a230f23e58b   17 hours ago             1.34GB
+<none>                          <none>          fdd21e0e5f14   18 hours ago             1.26GB
+<none>                          <none>          ba5c6f714be8   18 hours ago             1.26GB
+gcr.io/k8s-minikube/kicbase     v0.0.37         01c0ce65fff7   7 weeks ago              1.15GB
+python                          3.7.3-stretch   34a518642c76   3 years ago              929MB
  * Serving Flask app "app" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
@@ -108,25 +113,37 @@ python                        3.7.3-stretch   34a518642c76   3 years ago        
  * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 853-497-572
-116.50.59.202 - - [22/Mar/2023 15:27:19] "GET / HTTP/1.1" 200 -
-116.50.59.202 - - [22/Mar/2023 15:27:21] "GET /favicon.ico HTTP/1.1" 404 -
-[2023-03-22 15:27:28,608] INFO in app: JSON payload: 
+ * Debugger PIN: 123-733-161
+[2023-03-23 08:34:04,535] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2023-03-22 15:27:28,620] INFO in app: Inference payload DataFrame: 
+[2023-03-23 08:34:04,548] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2023-03-22 15:27:28,630] INFO in app: Scaling Payload: 
+[2023-03-23 08:34:04,558] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [22/Mar/2023 15:27:28] "POST /predict HTTP/1.1" 200 -
-[2023-03-22 15:27:31,447] INFO in app: JSON payload: 
+[2023-03-23 08:34:04,562] INFO in app: The output prediction is: [20.35373177134412]
+172.17.0.1 - - [23/Mar/2023 08:34:04] "POST /predict HTTP/1.1" 200 -
+[2023-03-23 08:34:11,824] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2023-03-22 15:27:31,462] INFO in app: Inference payload DataFrame: 
+[2023-03-23 08:34:11,865] INFO in app: Inference payload DataFrame: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2023-03-22 15:27:31,472] INFO in app: Scaling Payload: 
+[2023-03-23 08:34:11,890] INFO in app: Scaling Payload: 
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-172.17.0.1 - - [22/Mar/2023 15:27:31] "POST /predict HTTP/1.1" 200 -
-116.50.59.202 - - [22/Mar/2023 15:27:34] "GET / HTTP/1.1" 200 -
+[2023-03-23 08:34:11,893] INFO in app: The output prediction is: [20.35373177134412]
+172.17.0.1 - - [23/Mar/2023 08:34:11] "POST /predict HTTP/1.1" 200 -
+116.50.59.202 - - [23/Mar/2023 08:35:06] "GET / HTTP/1.1" 200 -
+116.50.60.180 - - [23/Mar/2023 08:35:07] "GET /favicon.ico HTTP/1.1" 404 -
+[2023-03-23 08:35:12,405] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2023-03-23 08:35:12,419] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2023-03-23 08:35:12,428] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2023-03-23 08:35:12,431] INFO in app: The output prediction is: [20.35373177134412]
+172.17.0.1 - - [23/Mar/2023 08:35:12] "POST /predict HTTP/1.1" 200 -
+
