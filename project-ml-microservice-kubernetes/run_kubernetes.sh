@@ -5,10 +5,11 @@
 # Step 1:
 # This is your Docker ID/path
 # dockerpath=<>
-dockerpath="viveknig9/repo001/"
+dockerpath="viveknig9/udacityproj"
 # Step 2
 # Run the Docker Hub container with kubernetes
 kubectl run udacityproj  --image=$dockerpath  --port=80 --labels app=udacityproj
+
 
 # Step 3:
 # List kubernetes pods

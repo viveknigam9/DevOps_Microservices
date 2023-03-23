@@ -6,7 +6,7 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath="viveknig9/repo001"
+dockerpath="viveknig9/udacityproj"
 # Step 2:  
 # Authenticate & tag
 docker login
