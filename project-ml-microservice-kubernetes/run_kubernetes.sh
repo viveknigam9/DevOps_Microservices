@@ -10,7 +10,8 @@ dockerpath="viveknig9/udacityproj"
 # Run the Docker Hub container with kubernetes
 kubectl run udacityproj  --image=$dockerpath  --port=80 --labels app=udacityproj
 
-
+# Let pod start
+sleep 60  
 # Step 3:
 # List kubernetes pods
 kubectl get pods
