@@ -1,5 +1,5 @@
 <include a CircleCI status badge, here>
-
+[![CircleCI](https://circleci.com/pipelines/github/viveknigam9/DevOps_Microservices.svg?style=svg&circle-token=2536e03781e935ea053dda04fe7a0b85364e355a)](https://circleci.com/pipelines/github/viveknigam9/DevOps_Microservices)
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
